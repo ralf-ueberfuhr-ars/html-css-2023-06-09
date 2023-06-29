@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Lebensmittel",
+        "description": "Einkäufe, Restaurant"
+    },
+    {
+        "id": 2,
+        "name": "Tanken"
+    },
+    {
+        "id": 3,
+        "name": "Werbungskosten"
+    },
+    {
+        "id": 4,
+        "name": "Hobby"
+    },
+    {
+        "id": 5,
+        "name": "Altersvorsorge"
+    }
+]

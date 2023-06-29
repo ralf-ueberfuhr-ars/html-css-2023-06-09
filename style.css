@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(152, 91, 6);
+}
+ol>li {
+    font-size: 0.9em;
+}
+tbody tr:nth-child(even) {
+    background-color: blueviolet;
+}
+tbody tr:nth-child(odd) {
+    background-color: bisque;
+}
+*[onclick] {
+    cursor: pointer;
+}
+.selected {
+    border: 5pt solid red;
+}

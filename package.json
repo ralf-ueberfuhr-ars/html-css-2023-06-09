@@ -1,0 +1,17 @@
+{
+  "name": "html-schulung",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sample.js",
+  "scripts": {
+    "sample": "tsc && node samples/typescript/sample.js",
+    "dev": "tsc -w",
+    "compile": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.1.5"
+  }
+}

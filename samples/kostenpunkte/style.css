@@ -1,0 +1,48 @@
+label::after {
+    content: ':';
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: #BADA55 url(https://picsum.photos/id/41/1200/1300);
+    background-size: cover;
+    text-shadow: 
+        1px 1px 2px red, 
+        0 0 1em blue, 
+        0 0 0.2em blue;
+}
+form.classic-grid > div {
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+}
+form.modern-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+form.modern-grid label {
+    font-size: 70%;
+}
+form.modern-grid > div {
+    display: grid;
+}
+table {
+    width: 100vw;
+    margin-top: 20px;
+}
+thead {
+    background-color: #BADA55;
+}
+th, td {
+    padding: .5em;
+}
+table .betrag {
+    text-align: right;
+}
+/*
+form.modern-grid > div:nth-child(1) {
+    order: 2;
+}
+*/
