@@ -17,7 +17,6 @@ kostenartService.initialisiereDaten(inputComponent.dataset.src!)
     .then(() => initializeKostenartTypeAhead(kostenartService, inputComponent))
     .then(result => typeAhead = result);
 
-
 /*
  * Kostenpunkte
  */

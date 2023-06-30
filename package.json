@@ -5,8 +5,8 @@
   "main": "sample.js",
   "scripts": {
     "sample": "tsc && node samples/typescript/sample.js",
-    "dev": "tsc -w & sass --watch samples",
-    "compile": "tsc && sass samples",
+    "watch": "tsc -w & sass --watch samples",
+    "build": "tsc && sass samples",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

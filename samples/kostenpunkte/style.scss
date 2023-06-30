@@ -1,15 +1,20 @@
 label::after {
     content: ':';
 }
+
+@mixin white-text-blue-red-shadow() {
+    color: white;
+        text-shadow:
+            1px 1px 2px red,
+            0 0 1em blue,
+            0 0 0.2em blue;
+}
+
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
     background: #BADA55 url(https://picsum.photos/id/41/1200/1300);
     background-size: cover;
-    text-shadow: 
-        1px 1px 2px red, 
-        0 0 1em blue, 
-        0 0 0.2em blue;
+    @include white-text-blue-red-shadow();
 }
 form.classic-grid > div {
     display: grid;
@@ -21,12 +26,14 @@ form.modern-grid {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-end;
-}
-form.modern-grid label {
-    font-size: 70%;
-}
-form.modern-grid > div {
-    display: grid;
+
+    label {
+        font-size: 70%;
+    }
+
+    >div {
+        display: grid;
+    }
 }
 table {
     width: 100vw;
@@ -41,8 +48,3 @@ th, td {
 table .betrag {
     text-align: right;
 }
-/*
-form.modern-grid > div:nth-child(1) {
-    order: 2;
-}
-*/
