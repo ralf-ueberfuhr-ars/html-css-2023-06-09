@@ -5,13 +5,14 @@
   "main": "sample.js",
   "scripts": {
     "sample": "tsc && node samples/typescript/sample.js",
-    "dev": "tsc -w",
-    "compile": "tsc",
+    "dev": "tsc -w & sass --watch samples",
+    "compile": "tsc && sass samples",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "sass": "^1.63.6",
     "typescript": "^5.1.5"
   }
 }
