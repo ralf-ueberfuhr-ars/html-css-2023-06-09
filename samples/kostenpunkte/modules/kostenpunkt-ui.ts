@@ -1,4 +1,4 @@
-import { Kostenpunkt, KostenpunktService } from "./kostenpunkt-domain"
+import { Kostenpunkt } from "./kostenpunkt-domain"
 
 type KostenpunktTableHandle = {
   add: (kostenpunkt: Kostenpunkt) => void;
@@ -16,8 +16,8 @@ function initializeKostenpunktTable(options: {
   const tableBody = options.tableBody;
   return {
     add: (kostenpunkt) => {
-      const tableRow = document.createElement('tr');
       const id = kostenpunkt.id || 0;
+      const tableRow = document.createElement('tr');
       tableRow.setAttribute('data-kostenpunkt', id.toString());
       tableBody.appendChild(tableRow);
       tableRow.innerHTML = `
